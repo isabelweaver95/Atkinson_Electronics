@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atkinson Electronics Wireframe</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .box {
+      border: 2px dashed #9ca3af;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-2 {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+      background: #f9fafb;
+      border: 1px solid #d1d5db;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .btn {
+      border: 2px solid #6b7280;
+      padding: 10px 15px;
+      display: inline-block;
+      border-radius: 8px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      border: 1px solid #d1d5db;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: #f9fafb;
+    }
+
+    @media (max-width: 800px) {
+      .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+```
+<div class="box">
+  <h1>Atkinson Electronics – Website Wireframe</h1>
+  <p>Low-fidelity homepage layout</p>
+</div>
+
+<div class="box">
+  <strong>Navigation</strong>
+  <div class="nav">
+    <div class="pill">Home</div>
+    <div class="pill">Services</div>
+    <div class="pill">Industries</div>
+    <div class="pill">Products</div>
+    <div class="pill">Support</div>
+    <div class="pill">About</div>
+    <div class="pill">Contact</div>
+  </div>
+</div>
+
+<div class="grid grid-2">
+  <div class="box">
+    <h2>Commercial Control Systems, Integration, and Electronics</h2>
+    <p>Brief overview of what the company does.</p>
+    <div class="btn">Contact</div>
+    <div class="btn">View Services</div>
+  </div>
+
+  <div class="box">
+    <p style="text-align:center;">Image Placeholder</p>
+  </div>
+</div>
+
+<div class="box">
+  <h2>What We Do</h2>
+  <div class="grid grid-3">
+    <div class="card">Control Systems</div>
+    <div class="card">Electrical / Integration</div>
+    <div class="card">Circuit Board Solutions</div>
+  </div>
+</div>
+
+<div class="grid grid-2">
+  <div class="box">
+    <h2>Industries</h2>
+    <div class="grid grid-2">
+      <div class="card">Commercial</div>
+      <div class="card">HVAC</div>
+      <div class="card">Facilities</div>
+      <div class="card">Retrofit</div>
+    </div>
+  </div>
+
+  <div class="box">
+    <h2>Why Choose Us</h2>
+    <div class="card">Experience</div>
+    <div class="card">Technical Depth</div>
+    <div class="card">Reliable Support</div>
+  </div>
+</div>
+
+<div class="box">
+  <h2>Circuit Board Division</h2>
+  <p>Access specialty electronics and HVAC interface boards.</p>
+  <div class="btn">Visit Product Catalog</div>
+</div>
+
+<div class="box">
+  <h2>Projects / Experience</h2>
+  <div class="grid grid-3">
+    <div class="card">Project 1</div>
+    <div class="card">Project 2</div>
+    <div class="card">Project 3</div>
+  </div>
+</div>
+
+<div class="box">
+  <h2>Contact</h2>
+  <div class="card">Form Placeholder</div>
+</div>
+```
+
+  </div>
+</body>
+</html>
