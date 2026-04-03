@@ -40,7 +40,6 @@ project-root/
 ├── /docs
 │   ├── atkinson-electronics-srs.md
 │   ├── content.md
-│   ├── sitemap.md
 │   │
 │   └── /wireframes
 │       └── homepage-wireframe.html
@@ -54,6 +53,25 @@ project-root/
 * CSS
 * JavaScript (future)
 * Optional upgrade: React / Next.js
+* Hosting: AWS (Amplify or S3 + CloudFront)
+
+---
+
+## Hosting Plan
+
+This website will be hosted using AWS services.
+
+### Planned Setup:
+
+* **Frontend Hosting:** AWS Amplify *or* S3 + CloudFront
+* **Domain Management:** Route 53 (or external registrar)
+* **Deployment:** Connected to GitHub for continuous deployment (if using Amplify)
+
+### Notes:
+
+* Initial version will be a static site
+* Infrastructure allows for future scalability if needed
+* HTTPS and global CDN delivery will be configured
 
 ---
 
