@@ -1,4 +1,4 @@
-# Atkinson Electronics Website SRS (Revised – No News Section)
+# Atkinson Electronics Website SRS 
 
 ## 1. Purpose
 
@@ -29,7 +29,6 @@ The purpose of the website is to represent the full scope of the company’s ser
 * About
 * Contact
 
-🚫 Removed: News / Updates
 
 ---
 
