@@ -75,7 +75,10 @@
       <div class="brand-row">
         <a href="index.html"><img src="images/logo.png" alt="Atkinson Electronics Logo" class="logo"></a>
       </div>
-      <nav class="nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav class="nav" id="site-nav">
         <a href="index.html" class="nav-item">Home</a>
         <a href="services.html" class="nav-item">Services</a>
         <a href="industries.html" class="nav-item">Industries</a>
@@ -110,7 +113,7 @@
 
       <h3 style="text-align: center; color: #0056b3; margin-top: 40px;">Send us a Message</h3>
       
-      <form class="form-container" method="POST" action="#" onsubmit="alert('Thank you for contacting us. We will get back to you soon.'); return false;">
+      <form class="form-container contact-form" method="POST" action="#" data-email="izzyweav@gmail.com">
         <div class="form-group">
           <label for="name">Name *</label>
           <input type="text" id="name" name="name" required>
@@ -156,5 +159,6 @@
       <p class="footer-text">ATKINSON ELECTRONICS &nbsp; | &nbsp; 14 WEST VINE STREET MURRAY 84107 UT &nbsp; | &nbsp; 800.261.3602</p>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
