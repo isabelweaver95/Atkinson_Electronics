@@ -367,6 +367,33 @@ img {
   gap: 24px;
 }
 
+.work-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+  align-items: center;
+  gap: 42px;
+  margin-bottom: 32px;
+}
+
+.work-intro-copy .section-intro {
+  margin-bottom: 0;
+}
+
+.work-image {
+  aspect-ratio: 7 / 4;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #dbe3ec;
+}
+
+.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .work-card {
   position: relative;
   min-height: 220px;
@@ -587,6 +614,142 @@ h1, h2 {
   overflow-wrap: anywhere;
 }
 
+/* Homepage bands span the viewport while their content stays readable. */
+.home-page {
+  --page-gutter: max(24px, calc((100vw - 1280px) / 2 + 24px));
+  padding: 0;
+  background: #ffffff;
+}
+
+.home-page .container {
+  max-width: none;
+  gap: 0;
+}
+
+.home-page .topbar {
+  width: 100%;
+  padding-right: var(--page-gutter);
+  padding-left: var(--page-gutter);
+}
+
+.band-inner {
+  width: min(calc(100% - 48px), 1280px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home-page .hero-section {
+  border: 0;
+  border-radius: 0;
+}
+
+.home-page .industrial-strip {
+  margin: 0;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.home-page .industrial-strip p {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page-band-white {
+  background: #ffffff;
+}
+
+.page-band-soft {
+  background: #f3f6fa;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.what-we-do-section > .grid {
+  margin-top: 28px;
+}
+
+.home-page .what-we-do-section,
+.home-page .work-section {
+  width: 100%;
+  padding: 72px var(--page-gutter);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.home-page .home-info-grid {
+  gap: 56px;
+  width: 100%;
+  padding: 72px var(--page-gutter);
+}
+
+.home-page .home-info-grid > .section {
+  height: auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.home-page .why-choose-section {
+  background: transparent;
+}
+
+.home-page .section-bg-circuit-board {
+  min-height: 280px;
+  width: 100%;
+  padding: 48px var(--page-gutter);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.home-page .work-section {
+  background: transparent;
+}
+
+.service-cta {
+  padding: 46px 0;
+  background: #0056b3;
+  color: #ffffff;
+}
+
+.service-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.service-cta .section-kicker {
+  margin-bottom: 8px;
+  color: #bfdbfe;
+}
+
+.service-cta h2 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.service-cta .btn-light {
+  flex: 0 0 auto;
+  margin: 0;
+  background: #ffffff;
+  color: #004a99;
+  font-weight: 700;
+}
+
+.service-cta .btn-light:hover {
+  background: #eaf2fb;
+}
+
+.home-page .site-footer {
+  border-radius: 0;
+}
+
 @media (max-width: 900px) {
   body {
     padding: 14px;
@@ -638,6 +801,31 @@ h1, h2 {
 
   .support-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-page .what-we-do-section,
+  .home-page .home-info-grid,
+  .home-page .work-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .home-page .home-info-grid {
+    gap: 48px;
+  }
+
+  .work-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .work-image {
+    height: auto;
+  }
+
+  .service-cta-inner {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .section-bg-circuit-board h2 {
@@ -703,12 +891,40 @@ h1, h2 {
     padding: 28px 18px;
   }
 
+  .band-inner {
+    width: min(calc(100% - 32px), 1280px);
+  }
+
+  .home-page {
+    --page-gutter: 16px;
+  }
+
+  .home-page .topbar {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .home-page .what-we-do-section,
+  .home-page .home-info-grid,
+  .home-page .work-section {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
   .section > .grid {
     margin-bottom: 12px;
   }
 
   .section-intro {
     margin-bottom: 22px;
+  }
+
+  .work-intro {
+    margin-bottom: 24px;
+  }
+
+  .work-image {
+    height: auto;
   }
 
   .support-card {
@@ -780,6 +996,10 @@ h1, h2 {
   .section-bg-circuit-board {
     min-height: 190px;
     padding: 28px 20px;
+  }
+
+  .home-page .section-bg-circuit-board {
+    min-height: 230px;
   }
 
   .section-bg-circuit-board h2 {
