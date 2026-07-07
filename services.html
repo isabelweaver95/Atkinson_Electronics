@@ -6,7 +6,7 @@
   <title>Services - Atkinson Electronics</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="interior-page services-page">
   <div class="container">
     <header class="topbar">
       <div class="brand-row">
@@ -17,7 +17,7 @@
       </button>
       <nav class="nav" id="site-nav">
         <a href="index.html" class="nav-item">Home</a>
-        <a href="services.html" class="nav-item">Services</a>
+        <a href="services.html" class="nav-item" aria-current="page">Services</a>
         <a href="industries.html" class="nav-item">Industries</a>
         <a href="products.html" class="nav-item">Products</a>
         <a href="support.html" class="nav-item">Support</a>
@@ -26,43 +26,137 @@
       </nav>
     </header>
 
-    <section class="industrial-strip">
-      <p>Comprehensive control system services designed for commercial applications and HVAC systems.</p>
+    <section class="section hero-section interior-hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Services</div>
+        <h1>Commercial Control System Services</h1>
+        <p>Comprehensive control system design, integration, troubleshooting, and support for commercial HVAC and building automation applications.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn">Request HVAC Service</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/services-building-controls.jpg" alt="Building automation dashboard for a commercial facility">
+      </div>
     </section>
 
-    <section class="section">
-      <h2>Our Services</h2>
-      <p style="font-size: 1.1rem; margin-bottom: 24px;">At Atkinson Electronics, we provide a full range of control system services to meet your commercial and HVAC automation needs.</p>
+    <section class="industrial-strip" aria-label="Service approach">
+      <div class="industrial-strip-inner">
+        <strong class="industrial-strip-label">Service Approach</strong>
+        <p>We focus on practical control solutions that help commercial facilities operate reliably day to day.</p>
+      </div>
+    </section>
+
+    <section class="section services-section page-band-white">
+      <div class="services-overview">
+        <div class="services-overview-copy">
+          <p class="section-kicker">What we handle</p>
+          <h2>Our Services</h2>
+          <p class="section-intro">Atkinson Electronics provides control system services for commercial facilities, HVAC equipment, and automation needs that require dependable technical support.</p>
+        </div>
+        <figure class="services-overview-media">
+          <img src="images/employee-working-panel.jpg" alt="Technician reviewing a commercial control system interface">
+        </figure>
+      </div>
       
-      <div class="grid grid-2" style="margin-top: 24px;">
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Control System Design & Implementation</h3>
+      <div class="grid service-card-grid">
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">01</span>
+            <span class="service-icon" aria-hidden="true">DS</span>
+          </div>
+          <h3>Control System Design &amp; Implementation</h3>
           <p>We design and implement control systems for commercial buildings, helping manage HVAC, automation, and building performance efficiently and reliably.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Commercial Automation</h3>
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">02</span>
+            <span class="service-icon" aria-hidden="true">CA</span>
+          </div>
+          <h3>Commercial Automation</h3>
           <p>From lighting controls to security integration, we provide comprehensive automation solutions tailored to your facility's needs.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">HVAC Controls</h3>
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">03</span>
+            <span class="service-icon" aria-hidden="true">HV</span>
+          </div>
+          <h3>HVAC Controls</h3>
           <p>Specialized expertise in HVAC control systems to optimize efficiency, comfort, and energy management for your building.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Electrical Panel Work</h3>
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">04</span>
+            <span class="service-icon" aria-hidden="true">EP</span>
+          </div>
+          <h3>Electrical Panel Work</h3>
           <p>Professional panel design, installation, and configuration for safe and efficient system operation.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Troubleshooting & Diagnostics</h3>
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">05</span>
+            <span class="service-icon" aria-hidden="true">TD</span>
+          </div>
+          <h3>Troubleshooting &amp; Diagnostics</h3>
           <p>Need help? We provide on-site troubleshooting and diagnostics to ensure your systems operate correctly and consistently.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">System Upgrades & Retrofits</h3>
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">06</span>
+            <span class="service-icon" aria-hidden="true">UR</span>
+          </div>
+          <h3>System Upgrades &amp; Retrofits</h3>
           <p>Modernize your existing systems with our upgrade and retrofit services to improve performance and reliability.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Training & Support</h3>
-          <p>We provide comprehensive training and ongoing support to ensure your team is confident operating and maintaining your systems.</p>
+        <div class="service-card service-card-featured">
+          <figure class="service-featured-media">
+            <img src="images/training-support.png" alt="Technician explaining a control panel during training">
+          </figure>
+          <div class="service-featured-copy">
+            <div class="service-card-header">
+              <span class="service-label">07</span>
+              <span class="service-icon" aria-hidden="true">TS</span>
+            </div>
+            <h3>Training &amp; Support</h3>
+            <p>We provide comprehensive training and ongoing support to ensure your team is confident operating and maintaining your systems.</p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="service-process page-band-soft" aria-labelledby="service-process-title">
+      <div class="band-inner">
+        <div class="service-process-header">
+          <p class="section-kicker">How service works</p>
+          <h2 id="service-process-title">A practical path from issue to support</h2>
+        </div>
+        <div class="service-process-steps">
+          <div class="process-step">
+            <span class="process-step-number">01</span>
+            <h3>Assess the System</h3>
+            <p>We review the equipment, controls, symptoms, and operational goals before recommending next steps.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step-number">02</span>
+            <h3>Diagnose or Design</h3>
+            <p>We identify the control issue or develop the right integration approach for the facility.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step-number">03</span>
+            <h3>Implement and Support</h3>
+            <p>We complete the work, verify operation, and provide follow-up support for day-to-day reliability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-cta">
+      <div class="service-cta-inner band-inner">
+        <div>
+          <p class="section-kicker">Commercial HVAC support</p>
+          <h2>Need help planning or troubleshooting a control system?</h2>
+        </div>
+        <a href="contact.html" class="btn btn-light">Contact Us</a>
       </div>
     </section>
 
