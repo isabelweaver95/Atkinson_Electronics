@@ -5,71 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact - Atkinson Electronics</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .form-container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 28px;
-      background: #f8fafc;
-      border-radius: 10px;
-    }
-    
-    .form-group {
-      margin-bottom: 20px;
-    }
-    
-    .form-group label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 600;
-      color: #111827;
-    }
-    
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      font-family: inherit;
-      font-size: 1rem;
-      box-sizing: border-box;
-    }
-    
-    .form-group textarea {
-      resize: vertical;
-      min-height: 150px;
-    }
-    
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: #0056b3;
-      box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
-    }
-    
-    .contact-info {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 24px;
-      margin-bottom: 40px;
-    }
-    
-    .contact-info-item {
-      padding: 20px;
-      background: #f8fafc;
-      border-radius: 10px;
-    }
-    
-    .contact-info-item h4 {
-      color: #0056b3;
-      margin-top: 0;
-    }
-  </style>
 </head>
-<body>
+<body class="interior-page contact-page">
   <div class="container">
     <header class="topbar">
       <div class="brand-row">
@@ -82,38 +19,65 @@
         <a href="index.html" class="nav-item">Home</a>
         <a href="services.html" class="nav-item">Services</a>
         <a href="industries.html" class="nav-item">Industries</a>
-        <a href="products.html" class="nav-item">Products</a>
+        <a href="https://atkinsonelectronics.com/" class="nav-item">Products</a>
         <a href="support.html" class="nav-item">Support</a>
         <a href="about.html" class="nav-item">About</a>
-        <a href="contact.html" class="nav-item">Contact</a>
+        <a href="contact.html" class="nav-item" aria-current="page">Contact</a>
       </nav>
     </header>
 
-    <section class="industrial-strip">
-      <p>Get in touch with our team to discuss your project or request service.</p>
+    <section class="section hero-section interior-hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Contact</div>
+        <h1>Let's Discuss Your Control System Needs</h1>
+        <p>Contact Atkinson Electronics to request service, discuss a project, or tell us about a commercial control system issue.</p>
+        <div class="hero-actions">
+          <a href="tel:+18002613602" class="btn">Call 800-261-3602</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/contact-hero.png" alt="Atkinson Electronics employee working with a control system">
+      </div>
     </section>
 
-    <section class="section">
-      <h2>Contact Us</h2>
-      
+    <section class="industrial-strip" aria-label="Contact Atkinson Electronics">
+      <div class="industrial-strip-inner">
+        <strong class="industrial-strip-label">Get in Touch</strong>
+        <p>Tell us about your facility, equipment, project, or support request so we can understand how to help.</p>
+      </div>
+    </section>
+
+    <section class="contact-section page-band-white">
+      <div class="band-inner">
+        <div class="contact-heading">
+          <p class="section-kicker">Contact details</p>
+          <h2>Contact Us</h2>
+        </div>
       <div class="contact-info">
         <div class="contact-info-item">
-          <h4>Address</h4>
+          <span class="service-label">01</span>
+          <h3>Address</h3>
           <p>14 West Vine Street<br>Murray, UT 84107</p>
         </div>
         <div class="contact-info-item">
-          <h4>Phone</h4>
-          <p><a href="tel:8002613602" style="color: #0056b3; text-decoration: none;">800.261.3602</a></p>
+          <span class="service-label">02</span>
+          <h3>Phone</h3>
+          <p><a href="tel:+18002613602">800.261.3602</a></p>
         </div>
         <div class="contact-info-item">
-          <h4>Business Hours</h4>
+          <span class="service-label">03</span>
+          <h3>Business Hours</h3>
           <p>Monday - Friday<br>8:00 AM - 5:00 PM MST</p>
         </div>
       </div>
 
-      <h3 style="text-align: center; color: #0056b3; margin-top: 40px;">Send us a Message</h3>
-      
-      <form class="form-container contact-form" method="POST" action="#" data-email="izzyweav@gmail.com">
+      <div class="contact-form-layout page-band-soft">
+        <div class="contact-form-intro">
+          <p class="section-kicker">Project or support request</p>
+          <h2>Send Us a Message</h2>
+          <p>Provide a few details about your system or project. Include the equipment involved and the issue you are experiencing when requesting technical support.</p>
+        </div>
+        <form class="form-container contact-form" method="POST" action="#" data-email="izzyweav@gmail.com">
         <div class="form-group">
           <label for="name">Name *</label>
           <input type="text" id="name" name="name" required>
@@ -151,8 +115,10 @@
           <textarea id="message" name="message" required></textarea>
         </div>
         
-        <button type="submit" class="btn" style="width: 100%; padding: 12px;">Send Message</button>
-      </form>
+          <button type="submit" class="btn form-submit">Send Message</button>
+        </form>
+      </div>
+      </div>
     </section>
 
     <footer class="site-footer">

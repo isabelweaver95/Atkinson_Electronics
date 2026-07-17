@@ -6,7 +6,7 @@
   <title>About - Atkinson Electronics</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="interior-page about-page">
   <div class="container">
     <header class="topbar">
       <div class="brand-row">
@@ -19,46 +19,90 @@
         <a href="index.html" class="nav-item">Home</a>
         <a href="services.html" class="nav-item">Services</a>
         <a href="industries.html" class="nav-item">Industries</a>
-        <a href="products.html" class="nav-item">Products</a>
+        <a href="https://atkinsonelectronics.com/" class="nav-item">Products</a>
         <a href="support.html" class="nav-item">Support</a>
-        <a href="about.html" class="nav-item">About</a>
+        <a href="about.html" class="nav-item" aria-current="page">About</a>
         <a href="contact.html" class="nav-item">Contact</a>
       </nav>
     </header>
 
-    <section class="industrial-strip">
-      <p>Years of experience in commercial control systems, integration, and electronics.</p>
+    <section class="section hero-section interior-hero">
+      <div class="hero-copy">
+        <div class="eyebrow">About Atkinson Electronics</div>
+        <h1>Practical Expertise in Commercial Controls</h1>
+        <p>We provide control system solutions, electrical integration, and specialty electronics for commercial and HVAC applications.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn">Talk With Our Team</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/atkinson-building.png" alt="Atkinson Electronics building in Murray, Utah">
+      </div>
     </section>
 
-    <section class="section">
-      <h2>About Atkinson Electronics</h2>
-      <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 24px;">Atkinson Electronics provides control system solutions, electrical integration, and specialty electronics for commercial and HVAC applications. With years of hands-on experience, we focus on reliability, technical precision, and customer support.</p>
+    <section class="industrial-strip" aria-label="Company experience">
+      <div class="industrial-strip-inner">
+        <strong class="industrial-strip-label">Our Focus</strong>
+        <p>Reliable commercial control systems, thoughtful integration, and responsive technical support.</p>
+      </div>
+    </section>
 
-      <div class="grid grid-2" style="margin-top: 32px;">
-        <div style="padding: 28px; background: #f8fafc; border-radius: 10px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Our Mission</h3>
+    <section class="section services-section page-band-white">
+      <div class="services-overview">
+        <div class="services-overview-copy">
+          <p class="section-kicker">Who we are</p>
+          <h2>About Atkinson Electronics</h2>
+          <p class="section-intro">With years of hands-on experience, we focus on reliability, technical precision, and customer support for commercial facilities and HVAC applications.</p>
+        </div>
+        <figure class="services-overview-media">
+          <img src="images/tech-panel.jpg" alt="Technician working with commercial control panel equipment">
+        </figure>
+      </div>
+
+      <div class="grid service-card-grid">
+        <div class="service-card">
+          <div class="service-card-header"><span class="service-label">01</span><span class="service-icon" aria-hidden="true">OM</span></div>
+          <h3>Our Mission</h3>
           <p>To deliver reliable, innovative control system solutions that help our customers optimize building performance, efficiency, and comfort while providing exceptional technical support.</p>
         </div>
-        <div style="padding: 28px; background: #f8fafc; border-radius: 10px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Our Values</h3>
+        <div class="service-card">
+          <div class="service-card-header"><span class="service-label">02</span><span class="service-icon" aria-hidden="true">OV</span></div>
+          <h3>Our Values</h3>
           <p>We are committed to excellence, integrity, technical expertise, and customer satisfaction. Every project receives our full attention and professional dedication.</p>
         </div>
       </div>
+    </section>
 
-      <h3 style="margin-top: 40px; color: #0056b3;">Why Choose Atkinson Electronics?</h3>
-      <div class="grid grid-3" style="margin-top: 24px;">
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h4 style="color: #0056b3; margin-top: 0;">Experience</h4>
+    <section class="service-process page-band-soft" aria-labelledby="about-values-title">
+      <div class="band-inner">
+        <div class="service-process-header">
+          <p class="section-kicker">Why choose us</p>
+          <h2 id="about-values-title">What customers can expect</h2>
+        </div>
+        <div class="service-process-steps">
+          <div class="process-step">
+            <span class="process-step-number">01</span>
+            <h3>Experience</h3>
           <p>Years of hands-on experience across diverse commercial and industrial applications.</p>
-        </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h4 style="color: #0056b3; margin-top: 0;">Technical Expertise</h4>
+          </div>
+          <div class="process-step">
+            <span class="process-step-number">02</span>
+            <h3>Technical Expertise</h3>
           <p>Deep technical knowledge and expertise in control systems, HVAC, and electronics.</p>
-        </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h4 style="color: #0056b3; margin-top: 0;">Reliability</h4>
+          </div>
+          <div class="process-step">
+            <span class="process-step-number">03</span>
+            <h3>Reliability</h3>
           <p>Dependable service and support you can count on, with rapid response to your needs.</p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="service-cta">
+      <div class="service-cta-inner band-inner">
+        <div><p class="section-kicker">Commercial controls expertise</p><h2>Ready to discuss your facility or project?</h2></div>
+        <a href="contact.html" class="btn btn-light">Contact Us</a>
       </div>
     </section>
 

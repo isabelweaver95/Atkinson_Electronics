@@ -6,7 +6,7 @@
   <title>Industries - Atkinson Electronics</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="interior-page industries-page">
   <div class="container">
     <header class="topbar">
       <div class="brand-row">
@@ -18,47 +18,132 @@
       <nav class="nav" id="site-nav">
         <a href="index.html" class="nav-item">Home</a>
         <a href="services.html" class="nav-item">Services</a>
-        <a href="industries.html" class="nav-item">Industries</a>
-        <a href="products.html" class="nav-item">Products</a>
+        <a href="industries.html" class="nav-item" aria-current="page">Industries</a>
+        <a href="https://atkinsonelectronics.com/" class="nav-item">Products</a>
         <a href="support.html" class="nav-item">Support</a>
         <a href="about.html" class="nav-item">About</a>
         <a href="contact.html" class="nav-item">Contact</a>
       </nav>
     </header>
 
-    <section class="industrial-strip">
-      <p>Experienced in serving diverse industries with specialized control system solutions.</p>
+    <section class="section hero-section interior-hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Industries</div>
+        <h1>Control Solutions for Commercial Facilities</h1>
+        <p>Atkinson Electronics supports a range of commercial and industrial environments with practical HVAC controls, automation, and system integration expertise.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn">Discuss Your Facility</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/slc.jpg" alt="Salt Lake City skyline and commercial buildings">
+      </div>
     </section>
 
-    <section class="section">
-      <h2>Industries We Serve</h2>
-      <p style="font-size: 1.1rem; margin-bottom: 24px;">Atkinson Electronics has extensive experience serving a variety of commercial and industrial sectors.</p>
-      
-      <div class="grid grid-3" style="margin-top: 24px;">
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Commercial Buildings</h3>
+    <section class="industrial-strip" aria-label="Industry experience">
+      <div class="industrial-strip-inner">
+        <strong class="industrial-strip-label">Industry Experience</strong>
+        <p>Experienced in serving diverse facilities with specialized control system solutions.</p>
+      </div>
+    </section>
+
+    <section class="section services-section page-band-white">
+      <div class="services-overview">
+        <div class="services-overview-copy">
+          <p class="section-kicker">Where we work</p>
+          <h2>Industries We Serve</h2>
+          <p class="section-intro">Atkinson Electronics brings hands-on controls experience to commercial buildings, HVAC systems, facility operations, and specialized applications.</p>
+        </div>
+        <figure class="services-overview-media">
+          <img src="images/tech-panel.jpg" alt="Technician working on a commercial control panel">
+        </figure>
+      </div>
+
+      <div class="grid service-card-grid">
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">01</span>
+            <span class="service-icon" aria-hidden="true">CB</span>
+          </div>
+          <h3>Commercial Buildings</h3>
           <p>Office buildings, retail centers, and commercial facilities with comprehensive control and automation solutions.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">HVAC Systems</h3>
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">02</span>
+            <span class="service-icon" aria-hidden="true">HV</span>
+          </div>
+          <h3>HVAC Systems</h3>
           <p>Specialized controls for heating, ventilation, and air conditioning systems to optimize efficiency and comfort.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Facilities Management</h3>
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">03</span>
+            <span class="service-icon" aria-hidden="true">FM</span>
+          </div>
+          <h3>Facilities Management</h3>
           <p>Multi-building and complex facility management with centralized control and monitoring.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Retrofit & Upgrade Projects</h3>
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">04</span>
+            <span class="service-icon" aria-hidden="true">RU</span>
+          </div>
+          <h3>Retrofit &amp; Upgrade Projects</h3>
           <p>Modernizing existing systems and facilities with new control technologies and automation.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Controls Modernization</h3>
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">05</span>
+            <span class="service-icon" aria-hidden="true">CM</span>
+          </div>
+          <h3>Controls Modernization</h3>
           <p>Upgrading legacy control systems to modern, energy-efficient solutions.</p>
         </div>
-        <div class="card" style="text-align: left; padding: 20px;">
-          <h3 style="color: #0056b3; margin-top: 0;">Specialty Applications</h3>
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="service-label">06</span>
+            <span class="service-icon" aria-hidden="true">SA</span>
+          </div>
+          <h3>Specialty Applications</h3>
           <p>Custom control solutions for specialized systems and unique application requirements.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="service-process page-band-soft" aria-labelledby="industry-approach-title">
+      <div class="band-inner">
+        <div class="service-process-header">
+          <p class="section-kicker">Built around your operation</p>
+          <h2 id="industry-approach-title">Support for every stage of a facility's controls lifecycle</h2>
+        </div>
+        <div class="service-process-steps">
+          <div class="process-step">
+            <span class="process-step-number">01</span>
+            <h3>Existing Facilities</h3>
+            <p>Troubleshooting and support for the controls and equipment already serving your building.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step-number">02</span>
+            <h3>System Improvements</h3>
+            <p>Practical upgrades and retrofits that improve reliability without losing sight of daily operations.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step-number">03</span>
+            <h3>Ongoing Support</h3>
+            <p>Technical guidance that helps facility teams keep systems working after a project is complete.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-cta">
+      <div class="service-cta-inner band-inner">
+        <div>
+          <p class="section-kicker">Commercial controls expertise</p>
+          <h2>Have a facility or specialized application in mind?</h2>
+        </div>
+        <a href="contact.html" class="btn btn-light">Contact Us</a>
       </div>
     </section>
 
