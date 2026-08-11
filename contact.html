@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - Atkinson Electronics</title>
+  <meta name="description" content="Contact Atkinson Electronics in Murray, Utah, to discuss commercial HVAC controls, request technical support, or tell us about your project.">
+  <title>Contact Atkinson Electronics | Request Service</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="interior-page contact-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="container">
     <header class="topbar">
       <div class="brand-row">
-        <a href="index.html"><img src="images/logo.png" alt="Atkinson Electronics Logo" class="logo"></a>
+        <a href="index.html"><img src="images/logo.png" alt="Atkinson Electronics Logo" class="logo" width="510" height="182" decoding="async"></a>
       </div>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         Menu
       </button>
-      <nav class="nav" id="site-nav">
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
         <a href="index.html" class="nav-item">Home</a>
         <a href="services.html" class="nav-item">Services</a>
         <a href="industries.html" class="nav-item">Industries</a>
@@ -26,6 +28,7 @@
       </nav>
     </header>
 
+    <main id="main-content">
     <section class="section hero-section interior-hero">
       <div class="hero-copy">
         <div class="eyebrow">Contact</div>
@@ -36,7 +39,7 @@
         </div>
       </div>
       <div class="hero-image">
-        <img src="images/contact-hero.png" alt="Atkinson Electronics employee working with a control system">
+        <img src="images/contact-hero.png" alt="Atkinson Electronics employee working with a control system" width="1024" height="384" decoding="async" fetchpriority="high">
       </div>
     </section>
 
@@ -52,77 +55,84 @@
         <div class="contact-heading">
           <p class="section-kicker">Contact details</p>
           <h2>Contact Us</h2>
+          <p>Reach our team by phone or send details about your project through the form below.</p>
         </div>
-      <div class="contact-info">
-        <div class="contact-info-item">
-          <span class="service-label">01</span>
-          <h3>Address</h3>
-          <p>14 West Vine Street<br>Murray, UT 84107</p>
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <span class="service-label">01</span>
+            <h3>Visit Us</h3>
+            <p>14 West Vine Street<br>Murray, UT 84107</p>
+          </div>
+          <div class="contact-info-item">
+            <span class="service-label">02</span>
+            <h3>Call Us</h3>
+            <p><a class="contact-info-link" href="tel:+18002613602">800.261.3602</a></p>
+          </div>
+          <div class="contact-info-item">
+            <span class="service-label">03</span>
+            <h3>Business Hours</h3>
+            <p>Monday–Friday<br>8:00 AM–5:00 PM MT</p>
+          </div>
         </div>
-        <div class="contact-info-item">
-          <span class="service-label">02</span>
-          <h3>Phone</h3>
-          <p><a href="tel:+18002613602">800.261.3602</a></p>
-        </div>
-        <div class="contact-info-item">
-          <span class="service-label">03</span>
-          <h3>Business Hours</h3>
-          <p>Monday - Friday<br>8:00 AM - 5:00 PM MST</p>
-        </div>
-      </div>
 
-      <div class="contact-form-layout page-band-soft">
-        <div class="contact-form-intro">
-          <p class="section-kicker">Project or support request</p>
-          <h2>Send Us a Message</h2>
-          <p>Provide a few details about your system or project. Include the equipment involved and the issue you are experiencing when requesting technical support.</p>
+        <div class="contact-form-layout page-band-soft">
+          <div class="contact-form-intro">
+            <p class="section-kicker">Project or support request</p>
+            <h2>Send Us a Message</h2>
+            <p>Provide a few details about your system or project. For technical support, include the equipment involved and what the system is doing.</p>
+            <p class="contact-response-note">For immediate assistance during business hours, call <a href="tel:+18002613602">800.261.3602</a>.</p>
+          </div>
+          <form class="form-container contact-form" method="POST" action="https://formspree.io/f/xljrbddj">
+            <p class="form-required-note"><span aria-hidden="true">*</span> Required fields</p>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" autocomplete="organization">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+
+              <div class="form-group form-group-full">
+                <label for="project-type">How Can We Help?</label>
+                <select id="project-type" name="project-type">
+                  <option value="">Select an option...</option>
+                  <option value="new-installation">New Installation</option>
+                  <option value="upgrade">System Upgrade</option>
+                  <option value="maintenance">Maintenance &amp; Support</option>
+                  <option value="troubleshooting">Troubleshooting</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group form-group-full">
+                <label for="message">Project or System Details <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn form-submit">Send Message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
         </div>
-        <form class="form-container contact-form" method="POST" action="#" data-email="izzyweav@gmail.com">
-        <div class="form-group">
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="company">Company</label>
-          <input type="text" id="company" name="company">
-        </div>
-        
-        <div class="form-group">
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone">
-        </div>
-        
-        <div class="form-group">
-          <label for="project-type">Project Type</label>
-          <select id="project-type" name="project-type">
-            <option value="">Select a project type...</option>
-            <option value="new-installation">New Installation</option>
-            <option value="upgrade">System Upgrade</option>
-            <option value="maintenance">Maintenance & Support</option>
-            <option value="troubleshooting">Troubleshooting</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="message">Message *</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        
-          <button type="submit" class="btn form-submit">Send Message</button>
-        </form>
-      </div>
       </div>
     </section>
+    </main>
 
     <footer class="site-footer">
-      <p class="footer-text">ATKINSON ELECTRONICS &nbsp; | &nbsp; 14 WEST VINE STREET MURRAY 84107 UT &nbsp; | &nbsp; 800.261.3602</p>
+      <p class="footer-text">ATKINSON ELECTRONICS &nbsp; | &nbsp; 14 WEST VINE STREET MURRAY 84107 UT &nbsp; | &nbsp; <a href="tel:+18002613602">800.261.3602</a></p>
     </footer>
   </div>
   <script src="script.js"></script>

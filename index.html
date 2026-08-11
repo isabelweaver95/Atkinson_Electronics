@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Atkinson Electronics</title>
+  <meta name="description" content="Commercial HVAC controls, system integration, troubleshooting, retrofits, and technical support from Atkinson Electronics in Murray, Utah.">
+  <title>Commercial HVAC Controls | Atkinson Electronics</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="home-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="container">
     <header class="topbar">
       <div class="brand-row">
-        <a href="index.html"><img src="images/logo.png" alt="Atkinson Electronics Logo" class="logo"></a>
+        <a href="index.html"><img src="images/logo.png" alt="Atkinson Electronics Logo" class="logo" width="510" height="182" decoding="async"></a>
       </div>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         Menu
       </button>
-      <nav class="nav" id="site-nav">
-        <a href="index.html" class="nav-item">Home</a>
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav-item" aria-current="page">Home</a>
         <a href="services.html" class="nav-item">Services</a>
         <a href="industries.html" class="nav-item">Industries</a>
         <a href="https://atkinsonelectronics.com/" class="nav-item">Products</a>
@@ -26,17 +28,18 @@
       </nav>
     </header>
 
+    <main id="main-content">
     <section class="section hero-section">
       <div class="hero-copy">
         <div class="eyebrow">Commercial Controls &amp; Integration</div>
-        <h2>Commercial HVAC Controls &amp; System Integration</h2>
+        <h1>Commercial HVAC Controls &amp; System Integration</h1>
         <p>Atkinson Electronics helps commercial facilities install, troubleshoot, and support reliable HVAC control systems for dependable day-to-day operation.</p>
         <div class="hero-actions">
           <a href="contact.html" class="btn">Request HVAC Service</a>
         </div>
       </div>
       <div class="hero-image">
-        <img src="images/controlBox.jpeg" alt="Control Box">
+        <img src="images/controlBox.jpeg" alt="Commercial HVAC control panel" width="2048" height="1365" decoding="async" fetchpriority="high">
       </div>
     </section>
 
@@ -147,7 +150,7 @@
         </div>
         <figure class="work-image">
           <!-- Replace this temporary image with a real Atkinson Electronics project photo. -->
-          <img src="images/EmployeeWorking.jpeg" alt="Employee working on a screen with a control system interface" />
+          <img src="images/EmployeeWorking.jpeg" alt="Employee working on a screen with a control system interface" width="1400" height="800" loading="lazy" decoding="async" />
         </figure>
       </div>
       <div class="grid grid-3 work-grid">
@@ -175,9 +178,10 @@
         <a href="contact.html" class="btn btn-light">Request HVAC Service</a>
       </div>
     </section>
+    </main>
 
     <footer class="site-footer">
-      <p class="footer-text">ATKINSON ELECTRONICS &nbsp; | &nbsp; 14 WEST VINE STREET MURRAY 84107 UT &nbsp; | &nbsp; 800.261.3602</p>
+      <p class="footer-text">ATKINSON ELECTRONICS &nbsp; | &nbsp; 14 WEST VINE STREET MURRAY 84107 UT &nbsp; | &nbsp; <a href="tel:+18002613602">800.261.3602</a></p>
     </footer>
   </div>
   <script src="script.js"></script>

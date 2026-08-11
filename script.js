@@ -9,6 +9,21 @@ document.querySelectorAll(".nav-toggle").forEach((toggle) => {
     toggle.setAttribute("aria-expanded", String(!isOpen));
     nav.classList.toggle("is-open", !isOpen);
   });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      toggle.setAttribute("aria-expanded", "false");
+      nav.classList.remove("is-open");
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || toggle.getAttribute("aria-expanded") !== "true") return;
+
+    toggle.setAttribute("aria-expanded", "false");
+    nav.classList.remove("is-open");
+    toggle.focus();
+  });
 });
 
 document.querySelectorAll(".accordion").forEach((accordion) => {
@@ -26,26 +41,40 @@ document.querySelectorAll(".accordion").forEach((accordion) => {
 });
 
 document.querySelectorAll(".contact-form").forEach((form) => {
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const recipient = form.dataset.email;
-    const formData = new FormData(form);
-    const lines = [
-      "New contact form submission:",
-      "",
-      `Name: ${formData.get("name") || ""}`,
-      `Company: ${formData.get("company") || ""}`,
-      `Email: ${formData.get("email") || ""}`,
-      `Phone: ${formData.get("phone") || ""}`,
-      `Project Type: ${formData.get("project-type") || ""}`,
-      "",
-      "Message:",
-      formData.get("message") || ""
-    ];
+    const submitButton = form.querySelector('[type="submit"]');
+    const status = form.querySelector(".form-status");
+    const originalButtonText = submitButton.textContent;
 
-    const subject = encodeURIComponent("Atkinson Electronics Contact Form");
-    const body = encodeURIComponent(lines.join("\n"));
-    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+    status.textContent = "";
+    status.className = "form-status";
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      form.reset();
+      status.textContent = "Thank you. Your message has been sent successfully.";
+      status.classList.add("form-status-success");
+    } catch (error) {
+      status.textContent = "We couldn't send your message. Please try again or call 800-261-3602.";
+      status.classList.add("form-status-error");
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = originalButtonText;
+    }
   });
 });
