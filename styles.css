@@ -1260,6 +1260,51 @@ h2 {
   color: #a61b1b;
 }
 
+.form-privacy-note {
+  margin: 14px 0 0;
+  color: #64748b;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.form-privacy-note a {
+  color: #0056b3;
+}
+
+.privacy-section {
+  padding: 72px 0;
+}
+
+.privacy-inner {
+  max-width: 860px;
+}
+
+.privacy-inner h1 {
+  margin: 0 0 8px;
+  font-size: 2.4rem;
+}
+
+.privacy-updated {
+  margin: 0 0 40px;
+  color: #64748b;
+}
+
+.privacy-inner h2 {
+  margin: 34px 0 10px;
+  color: #0f172a;
+  font-size: 1.25rem;
+}
+
+.privacy-inner p {
+  color: #475569;
+  line-height: 1.75;
+}
+
+.privacy-inner a {
+  color: #0056b3;
+  font-weight: 600;
+}
+
 .process-step {
   position: relative;
   min-height: 180px;
@@ -1543,6 +1588,10 @@ h2 {
   }
 
   .contact-section {
+    padding: 44px 0;
+  }
+
+  .privacy-section {
     padding: 44px 0;
   }
 
